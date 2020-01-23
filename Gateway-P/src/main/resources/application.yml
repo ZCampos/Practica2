@@ -1,0 +1,8 @@
+server:
+  port: 9901
+zuul:  routes:    producto:
+      path: /empleado/**
+      service-id: empleado-ms
+    compania:
+      path: /empresa/**
+      service-id: empresa-ms
